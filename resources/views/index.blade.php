@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title' , 'The list of tasks')
-
 @section('content')
 <div class="container mt-5">
     <h2>Task List</h2>

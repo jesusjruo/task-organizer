@@ -17,6 +17,9 @@
                 <p class="text-muted m-0">Created at: {{ $task->created_at->format('F j, Y H:i') }}</p>
                 <p class="text-muted m-0">Last updated: {{ $task->updated_at->format('F j, Y H:i') }}</p>
             </div>
+            <div class="mt-3">
+                <a href="/tasks/{{$task->id}}/edit" class="btn btn-primary small">Edit task</a>
+            </div>
         </div>
     </div>
 </div>

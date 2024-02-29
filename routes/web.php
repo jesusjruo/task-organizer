@@ -25,6 +25,8 @@ Route::controller(TaskController::class)->group(function ()  {
   Route::get('/tasks','viewAllTasks')->name('tasks.index');
   Route::view('/tasks/create','create')->name('tasks.create');
   Route::get('/tasks/{task}' , 'viewTask')->name('tasks.show');
+  Route::get('/tasks/{task}/edit' , 'editTask')->name('tasks.edit');
+  Route::put('/tasks/{task}' , 'updateTask')->name('tasks.update');
   Route::post('/tasks' , 'createTask')->name('tasks.store');
 });
 
